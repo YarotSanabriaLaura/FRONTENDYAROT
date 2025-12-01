@@ -10,19 +10,14 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.css"],
             "scripts": []
           },
@@ -36,15 +31,15 @@
 
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "defaultConfiguration": "development",
           "configurations": {
             "production": {
-              "buildTarget": "frontend:build:production"
+              "browserTarget": "frontend:build:production"
             },
             "development": {
-              "buildTarget": "frontend:build:development"
+              "browserTarget": "frontend:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         }
       }
     }
