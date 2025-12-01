@@ -1,0 +1,38 @@
+<div class="page-header-industrial">
+  <h1>Estufas Industriales</h1>
+  <p>Consulta y administra las estufas registradas en el sistema.</p>
+</div>
+
+<div class="card">
+  <h2>Lista de Estufas</h2>
+
+  <button class="btn-primary-custom" (click)="nuevaEstufa()">
+    Agregar Estufa
+  </button>
+
+  <table class="table-modern">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Descripción</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Potencia</th>
+        <th>Tipo</th>
+        <th>Cocina</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let e of estufas">
+        <td>{{ e.id }}</td>
+        <td>{{ e.descripcion }}</td>
+        <td>{{ e.marca }}</td>
+        <td>{{ e.modelo }}</td>
+        <td>{{ e.potencia }}</td>
+        <td>{{ e.tipo }}</td>
+        <td>{{ e.cocina?.nombre }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

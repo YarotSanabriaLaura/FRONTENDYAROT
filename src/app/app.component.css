@@ -1,0 +1,107 @@
+.main-header {
+  width: 100%;
+  background: #111;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.main-header .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  color: #e50914;
+}
+tbody tr {
+  transition: 0.2s ease;
+}
+
+tbody tr:hover {
+  transform: scale(1.01);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  background: #fdfdfd;
+}
+.btn {
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background: linear-gradient(90deg, #e50914, #d40812);
+  box-shadow: 0 3px 10px rgba(229,9,20,0.4);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(229,9,20,0.6);
+}
+
+/* footer industrial */
+.footer {
+  background: #101010;
+  padding: 25px 0;
+  text-align: center;
+  color: #ccc;
+  border-top: 3px solid #007bff;
+}
+
+.footer-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* contenedor de iconos */
+.social-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* botón general */
+.social-btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #1e1e1e;
+  transition: 0.3s ease;
+}
+
+.social-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: white;
+  transition: 0.3s;
+}
+
+/* efectos de hover */
+.social-btn:hover {
+  transform: scale(1.12);
+  background: #007bff;
+}
+
+/* colores específicos opcionales */
+.whatsapp:hover { background: #25D366; }
+.facebook:hover { background: #1877F2; }
+.instagram:hover { background: #E1306C; }
+.tiktok:hover { background: #000000; box-shadow: 0 0 10px #ff0050; }

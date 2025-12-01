@@ -1,0 +1,33 @@
+.inicio-grid {
+  display: flex;
+  gap: 25px;
+  padding: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.inicio-card {
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  border-left: 6px solid #007bff;
+  text-align: left;
+  transition: transform .2s ease;
+}
+
+.inicio-card:hover {
+  transform: translateY(-6px);
+}
+
+.inicio-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.inicio-card p {
+  margin-bottom: 20px;
+  color: #444;
+}

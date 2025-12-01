@@ -1,0 +1,20 @@
+<div class="container fade-in">
+
+  <h1 class="title-form">Editar Cocina</h1>
+
+  <div class="form-box">
+
+    <label>Nombre:</label>
+    <input type="text" [(ngModel)]="cocina.nombre" placeholder="Ej. Cocina Principal">
+
+    <label>Ubicación:</label>
+    <input type="text" [(ngModel)]="cocina.ubicacion" placeholder="Ej. Planta baja - ala A">
+
+    <div class="form-buttons">
+      <button class="btn" (click)="guardarCambios()">Guardar cambios</button>
+      <button class="btn btn-delete" (click)="volver()">Volver</button>
+    </div>
+
+  </div>
+
+</div>
