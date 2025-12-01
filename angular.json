@@ -4,26 +4,34 @@
   "newProjectRoot": "projects",
   "projects": {
     "frontend": {
-      "projectType": "application",
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "projectType": "application",
+
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist",
             "index": "src/index.html",
-            "main": "src/main.ts",
+            "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "styles": ["src/styles.css"],
             "scripts": []
           },
           "configurations": {
             "production": {
               "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false
             }
           },
           "defaultConfiguration": "production"
@@ -32,11 +40,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-              "browserTarget": "frontend:build:production"
-            },
             "development": {
-              "browserTarget": "frontend:build:development"
+              "buildTarget": "frontend:build:development"
+            },
+            "production": {
+              "buildTarget": "frontend:build:production"
             }
           },
           "defaultConfiguration": "development"
@@ -44,6 +52,7 @@
       }
     }
   },
+
   "cli": {
     "analytics": false
   }
