@@ -8,7 +8,7 @@
 
 .inicio-card {
   width: 320px;
-  background: white;
+  background: purple;
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
@@ -29,5 +29,5 @@
 
 .inicio-card p {
   margin-bottom: 20px;
-  color: #444;
+  color: purple;
 }

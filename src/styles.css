@@ -10,7 +10,7 @@ body {
 /* HEADER INDUSTRIAL */
 .header {
   width: 100%;
-  background: #0d0d0d;
+  background: purple;
   padding: 18px 0;
   border-bottom: 3px solid #007bff;
   box-shadow: 0 3px 10px rgba(0,0,0,0.4);
@@ -136,13 +136,13 @@ body {
 /* FOOTER */
 .footer {
   margin-top: 80px;
-  background: #0d0d0d;
+  background: purple;
   padding: 25px 0;
   text-align: center;
   color: #d0d0d0;
   font-size: 14px;
   letter-spacing: .5px;
-  border-top: 3px solid #007bff;
+  border-top: 3px solid #0a1c30;
 }
 
 .page-header-industrial {
@@ -315,7 +315,7 @@ select.input-industrial:focus {
 
 .navbar-industrial {
   width: 100%;
-  background: #000;
+  background: purple;
   padding: 20px 0;
   display: flex;
   justify-content: center;
@@ -345,3 +345,4 @@ select.input-industrial:focus {
   border-bottom: 2px solid #0d6efd;
   padding-bottom: 4px;
 }
+
